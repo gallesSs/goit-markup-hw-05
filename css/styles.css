@@ -813,7 +813,7 @@ h2 {
   background-color: #31d0aa;
 }
 
-.modal-checkbox:checked + .checkbox-label > .checkbox-icon {
+.modal-checkbox:checked > .checkbox-label > .checkbox-icon {
   background-color: var(--background, #f4f4fd);
   border: none;
   fill: var(--OCEAN, #404bbf);

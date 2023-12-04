@@ -814,9 +814,9 @@ h2 {
 }
 
 .modal-checkbox:checked > .checkbox-label > .checkbox-icon {
-  background-color: var(--background, #f4f4fd);
+  background-color: var(--background, #404bbf);
   border: none;
-  fill: var(--OCEAN, #404bbf);
+  fill: var(--OCEAN, #f4f4fd);
 }
 
 .policy {

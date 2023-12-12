@@ -292,6 +292,7 @@ h2 {
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
 }
 
 .features .features-container .features-list {
@@ -695,6 +696,10 @@ h2 {
   margin-left: 16px;
 }
 
+.footer-form {
+  margin-left: auto;
+}
+
 /* =========== FOOTER  ============ */
 
 /* =========== MODAL============== */
@@ -861,10 +866,10 @@ h2 {
   justify-content: center;
   align-items: center;
   fill: transparent;
+  margin-right: 8px;
 }
 
 .checkbox-icon {
-  background-color: #31d0aa;
 }
 
 .modal-checkbox:checked + .checkbox-label > .checkbox-label-span {
@@ -875,6 +880,7 @@ h2 {
 
 .policy {
   color: var(--IRIS, #4d5ae5);
+  margin-left: 5px;
 }
 
 .button-submit {
@@ -892,4 +898,9 @@ h2 {
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
+  margin: 0 auto;
+}
+
+.button-submit:hover {
+  background-color: #404bbf;
 }

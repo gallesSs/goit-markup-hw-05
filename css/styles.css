@@ -24,8 +24,22 @@ ol {
 }
 
 .container {
-  width: 1158px;
+  min-width: 320px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    margin: 0 auto;
+  }
 }
 
 img {
@@ -78,7 +92,57 @@ h2 {
 
 /* =========== HEADER  ============ */
 
-.container {
+/* Mobile */
+
+.nav-list {
+  display: none;
+}
+
+.address {
+  display: none;
+}
+
+.menu-open {
+  border: 0;
+  background-color: transparent;
+}
+
+.nav-logo {
+  color: #4d5ae5;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+
+.header .nav .nav-logo > span {
+  color: #2e2f42;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .container {
   width: 1158px;
   display: flex;
   justify-content: space-between;
@@ -207,7 +271,7 @@ h2 {
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
-}
+} */
 
 /* =========== HEADER  ============ */
 
@@ -262,7 +326,6 @@ h2 {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  min-width: 169px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -703,7 +766,15 @@ h2 {
 /* =========== FOOTER  ============ */
 
 /* =========== MODAL============== */
-.backdrop {
+
+.is-hidden {
+  visibility: hidden;
+  /* z-index: 100; */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -715,7 +786,7 @@ h2 {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal {
+.modal-wrapper {
   width: 408px;
   min-height: 584px;
   background-color: #fcfcfc;
